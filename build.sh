@@ -7,4 +7,4 @@ cd ElectronTouchID
 make clean
 make
 cd ..
-node-gyp rebuild
+./node_modules/.bin/node-gyp rebuild

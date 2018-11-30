@@ -1,0 +1,5 @@
+disabled_rules:
+  - line_length
+opt_in_rules:
+  - closure_end_indentation
+  - literal_expression_end_indentation

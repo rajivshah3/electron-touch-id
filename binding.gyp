@@ -7,7 +7,8 @@
       ],
       "cflags+": ["-std=c++11"],
       "include_dirs": [
-        "<!(node -e \"require('nan')\")"
+        "<!(node -e \"require('nan')\")",
+        "ElectronTouchID/out"
       ],
       "link_settiings": {
         "libraries": [

@@ -1,5 +1,6 @@
 #include <nan.h>
 #include <string>
+#include "ElectronTouchID.framework/Headers/ElectronTouchID-Swift.h"
 
 using v8::FunctionCallbackInfo;
 using v8::Isolate;
@@ -9,10 +10,8 @@ using v8::String;
 using v8::Value;
 
 
-extern "C" void is_supported();
-
 void isSupported(const Nan::FunctionCallbackInfo<v8::Value>& info) {
-
+  info.GetReturnValue().Set(Nan::New(is_supported()));
 }
 
 void Init(v8::Local<v8::Object> exports) {

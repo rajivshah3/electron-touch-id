@@ -1,5 +1,6 @@
 osx_image: xcode10.1
 language: swift
 script:
+  - npm install
   - swift build --package-path ElectronTouchID
-  - swift test --package-path ElectronTouchID
+  - ./build.sh

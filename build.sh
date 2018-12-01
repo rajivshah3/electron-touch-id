@@ -3,8 +3,5 @@ set -e
 
 rm -rf build
 
-cd ElectronTouchID
-make clean
-make
-cd ..
+./build-swift.sh
 ./node_modules/.bin/node-gyp rebuild

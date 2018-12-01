@@ -2,6 +2,6 @@
 set -e
 
 cd ElectronTouchID
-make clean
-make
+rm -rf .build
+swift build -c release
 cd ..
